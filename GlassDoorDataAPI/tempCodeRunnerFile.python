@@ -1,0 +1,9 @@
+##CSV -> JSON 
+
+import pandas as pd
+import os
+data = pd.read_csv('..//glassdoor-scraper//src//output//output_02-10-2022.csv',encoding='cp1252' )
+
+
+data=data.to_dict()
+print(data.keys())
